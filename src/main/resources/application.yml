@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+springdoc:
+  api-docs:
+    path: /api-docs
+token:
+  signing:
+    key: ${APP_TOKEN_SIGNING_KEY}
